@@ -1,4 +1,4 @@
-	/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -48,58 +48,40 @@ table {
 }
 
 html {
-	font-family: Arial;
-	font-size: 20px;
-	background-color: #303030;
-	color: #FFF;
-	padding: 20px;
+	background-color: #FFFFFF;
+	font-family: 'LeagueGothic';
 }
 
-#content {
-	margin: 2em;
+body {
+	font-family: 'LeagueGothic';
+	font-size: 15px;
+	margin: 10px 150px 10px 150px;
 }
 
-header { 
-	font-family: Lucida; 
-	font-size: 1.3em;
-	background-color: #000000;
-	padding: 1em;
-	list-style: none;
-	margin: 1em;
-}
-
-h1, h2 {
-	font-family: Helvetica;
-	text-align: center;
-	margin: 15px;
-}
 
 h1 {
-	font-size: 2em;
+	font-family: 'LeagueGothic'; 
+	font-size: 4em;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+
 }
 
-#top-nav {
-	background-color: #000000;
+h2 {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 10px 10px 10px 0px;
 }
 
-.menu {
-	text-align: center;
+.entry {
+	font-family: 'LeagueGothic'; 
+	font: italic;
 }
 
 a {
 	text-decoration: none;
-	color: #5A47C2;
-	display: block;
 }
 
 a:hover {
-	font-weight: bold;
-}
-
-
-
-footer {
-	margin: 15px 15px 15px 0;
-	padding: 10px 10px 10px 0px;
-	font-size: 0.5em;
-}
+	color: #5EC9B9;
+} 
