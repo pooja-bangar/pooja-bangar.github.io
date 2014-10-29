@@ -1,7 +1,3 @@
-/*
-CSS RESET BEGIN
-===============
-*/ 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -50,18 +46,58 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/*
-CSS RESET END
-===============
-*/ 
 
-/*
+html { 
+	font-family: Helvetica;
+	font-size: 40px;
+	margin: 50px;
+}
 
-BEGIN ANIMATION CODE
-====================
+body {
+	background-color: #FFF;
+	font-size: 0.7em;
+}
 
+h1 {
+	font-family: Tenor-Sans, sans-serif;;
+	color: #FFF; 
+	font-size: 2em;
+	text-decoration: none;
+	background-color:#000000; 
+	padding: 5px;
+	margin-top: 5px;
+	text-align: center; 
+	transition: background-color 2s;
+    -moz-transition: background-color 2s;
+    -webkit-transition: background-color 2s;
+    -ms-transition: background-clor 2s;
+    -o-transition: background-color 2s;
+}
+h1:hover 
+	{
+		background-color: #40A4BF
+	}
+
+h2 {
+	font-style: italic;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* 
+
+CSS Reset Ends
+==============
 */
 
+/* 
+
+Webpage begins
+==============
+
+*/
+/* Animation definitions */
 @-webkit-keyframes rotateWord {
     0% { opacity: 0; }
     2% { opacity: 0; -webkit-transform: translateY(-30px); }
@@ -90,77 +126,106 @@ BEGIN ANIMATION CODE
     100% { opacity: 0; }
 }
 
-/*
-BODY BEGIN
-==========
-*/
-html {
-	font-family: 'Helvetica', 'Arial', sans-serif;
-	font-size: 18px;
+@keyframes rotateWordsSecond {
+    0% { opacity: 1; animation-timing-function: ease-in; width: 0px; }
+    10% { opacity: 0.3; width: 0px; }
+    20% { opacity: 1; width: 100%; }
+    27% { opacity: 0; width: 100%; }
+    100% { opacity: 0; }
 }
 
-body {
-	padding: 2em;
+/* Body Text Begins */
+
+
+#Bio {
+	background-color: #FF0000;
+	padding: 20px;
 }
 
-h1, h2, h3, h4, h5 {
-	font-family: 'Georgia', 'Times', serif;
+#me {
+	background-color: #000000;
+	color: #FFF;
+	margin-top: 10px;
+	padding: 10px;
+	padding-bottom: none;
+	text-align: center;
+
+}
+#test {
+	background-color: #40A4BF;
+	color: #FFF;
+	padding: 10px;	
+	font-family: Georgia;
 	font-weight: bold;
-	line-height: 1.6em;
+	margin-bottom: 10px;
+	text-align: center;
+
 }
 
-h1 {
-	font-size: 2.4em;
-	margin: 0 0 1.4em 0;
+#contact {
+	text-align: center;
 }
 
-h2 {
-	font-size: 2em;
-	margin: 0 0 1em 0;	
+a {
+	color: #000000;
+	text-decoration: none;
+	text-align: center;
 }
 
-.wrapper {
+a:hover {
+	color: #FFF;
+} 
+
+.rw-wrapper{
 	width: 80%;
 	position: relative;
 	margin: 110px auto 0 auto;
+	font-family: 'Bree Serif';
 	padding: 10px;
 }
 
-.rw-words{
+h2 {
+	margin: 0;
+	text-align: left;
+	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+}
+
+h2 span{
+	color: #444;
+	white-space: nowrap;
+	font-size: 200%;
+	font-weight: normal;
+}
+
+.rw-words {
 	display: inline;
 	text-indent: 10px;
 }
 
-.rw-words-1 li{
+.rw-words li {
 	position: absolute;
 	opacity: 0;
 	overflow: hidden;
+	width: 100%;
 	color: #6b969d;
-	display: inline;
-	-webkit-animation: rotateWord 18s linear infinite 0s;
-	-ms-animation: rotateWord 12s linear infinite 0s;
-	animation: rotateWord 12s linear infinite 0s;
-}
-.rw-words-1 li:nth-child(2) { 
-    -webkit-animation-delay: 3s; 
-	-ms-animation-delay: 3s; 
-	animation-delay: 3s; 
-	color: #6b889d;
-}
-.rw-words-1 li:nth-child(3) { 
-    -webkit-animation-delay: 6s; 
-	-ms-animation-delay: 6s; 
-	animation-delay: 6s; 
-	color: #6b739d;	
-}
-.rw-words-1 li:nth-child(4) { 
-    -webkit-animation-delay: 9s; 
-	-ms-animation-delay: 9s; 
-	animation-delay: 9s; 
-	color: #7a6b9d;
 }
 
-/*
-BODY END
-==========
-*/
+.rw-words-1 span {
+	animation: rotateWordsFirst 12s linear infinite 0s;
+}
+.rw-words-2 span{
+    animation: rotateWordsSecond 12s linear infinite 0s;
+}
+.rw-words span:nth-child(2) { 
+    animation-delay: 3s; 
+    color: #6b889d;
+}
+.rw-words span:nth-child(3) { 
+    animation-delay: 6s; 
+    color: #6b739d; 
+}
+.rw-words span:nth-child(4) { 
+    animation-delay: 9s; 
+    color: #7a6b9d;
+
+/* Body Text Ends */
